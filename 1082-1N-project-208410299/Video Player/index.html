@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Custom Video Player</title> 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    /> 
+     <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                 JS demo
+              </a>
+              <div class="dropdown-menu">
+                <a href="../Unconventional Calculator/index.html" class="dropdown-item">
+                  a. Unconventional Calculator
+                </a>
+                <a href="../Monster Killer/index.html" class="dropdown-item">
+                  b. Monster Killer
+             </a>
+             <a href="../DOM Movie Project/index.html" class="dropdown-item">
+              c. DOM Movie Project
+         </a>
+         <a href="../Music Player/index.html" class="dropdown-item">
+          d. Music Player
+     </a>
+                <a href="index.html" class="dropdown-item">
+                  e. Video Player
+                </a>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    <section>
+      <h1>Custom Video Player</h1>
+      <video
+        src="videos/gone.mp4"
+        id="video"
+        class="screen"
+        poster="img/poster.png"
+      ></video>
+      <div class="controls">
+        <button class="btn" id="play">
+          <i class="fa fa-play fa-2x"></i>
+        </button>
+        <button class="btn" id="stop">
+          <i class="fa fa-stop fa-2x"></i>
+        </button>
+        <input
+          type="range"
+          id="progress"
+          class="progress"
+          min="0"
+          max="100"
+          step="0.1"
+          value="0"
+        />
+        <span class="timestamp" id="timestamp">00:00</span>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs -->
